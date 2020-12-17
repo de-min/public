@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dave Gamache</title>
+<meta name="description" content="Personal site of designer Dave Gamache.">
+<meta name="author" content="Dave Gamache | @dhg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="container-inner">
+    <div class="background"></div>
+    <!--각 씬은 섹션으로 감싸고 wrapper 클래스를 주어 display:none 으로 설정-->
+    <!--id 인트로는 객체의 위치와 텍스트정렬 가로폭을 설정-->
+    <section id="intro" class="wrapper"> 
+      <!--class neme과 byline은 폰트 사이즈등 스타일을 정의-->
+      <h1 class="name">Parallax Demo</h1>
+      <h2 class="byline">An experiment by Dave Gamache</h2>
+    </section>
+    <!--각 씬은 섹션으로 감싸고 wrapper 클래스를 주어 display:none 으로 설정-->
+    <!--id explosion은 가로세로 비율과 위치고정을 설정-->
+    <section id="explosion" class="wrapper">
+      <p class="explosion-byline">Here's an example of 16 elements scaling, fading and moving at once.</p>
+      <!--id-domExplosionList의 가로사이즈와 위치 설정 -->
+      <ul id="domExplosionList">
+        <!--dom-explosion-item의 가로 세로 사이즈 설정 60px-->
+        <!--dei-1~16의 화면 내 위치를 설정-->
+        <li class="dom-explosion-item dei-1"></li>
+        <li class="dom-explosion-item dei-2"></li>
+        <li class="dom-explosion-item dei-3"></li>
+        <li class="dom-explosion-item dei-4"></li>
+        <li class="dom-explosion-item dei-5"></li>
+        <li class="dom-explosion-item dei-6"></li>
+        <li class="dom-explosion-item dei-7"></li>
+        <li class="dom-explosion-item dei-8"></li>
+        <li class="dom-explosion-item dei-9"></li>
+        <li class="dom-explosion-item dei-10"></li>
+        <li class="dom-explosion-item dei-11"></li>
+        <li class="dom-explosion-item dei-12"></li>
+        <li class="dom-explosion-item dei-13"></li>
+        <li class="dom-explosion-item dei-14"></li>
+        <li class="dom-explosion-item dei-15"></li>
+        <li class="dom-explosion-item dei-16"></li>
+      </ul>
+    </section>
+    <!--각 씬은 섹션으로 감싸고 wrapper 클래스를 주어 display:none 으로 설정-->
+    <section id="images" class="wrapper">
+      <p class="images-byline">Or better yet, a realistic example of showcasing some design work.</p>
+      <p class="images-byline-2">Really, anything is possible &hellip;</p>
+      <!--mediumHomepage: 홈페이지 이미지의 노출 위치 설정-->
+      <!--raw-page: 가로 비율과 라운딩 그림자 설정-->
+      <img id="mediumHomepage" class="raw-page" src="img/oversized-raw-homepage.jpg">
+      <!--iphone위치와 가로 비율 설정-->
+      <div class="iphone">
+        <!--iphone-frame 위치와 가로 비율 z-index 2 설정-->
+        <img class="iphone-frame" src="img/iphoneframe.png">
+        <!--가로세로 비율과 위치 설정-->
+        <div class="iphone-viewport">
+          <!--iphone-content 각 이미지 위치 설정-->
+          <!--medium-profile-iphone z-index 2 설정-->
+          <img id="medium-profile-iphone" class="iphone-content" src="img/medium-profile-iphone-fullsize.jpg">
+          <img id="davegamache-dot-com" class="iphone-content" src="img/davegamache-rotated.jpg">
+        </div>
+      </div>
+    </section>
+    <!--각 씬은 섹션으로 감싸고 wrapper 클래스를 주어 display:none 으로 설정-->
+    <!-- links 위치와 가로비율 설정-->
+    <section id="links">
+      <!--links-byline - 폰트 스타일 설정-->
+      <p class="links-byline">Learn how to make your parallax site smooth like this one.</p>
+      <a class="btn" href="https://medium.com/@dhg/82ced812e61c">Read about it on Medium</a>
+    </section>
+  </div>
+
+</div>
+<h3 class="error">Whoops! Right now this demo doesn't handle resizing or browsers less than 1000px wide. Reload this page or get on a laptop!</h3>
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="js/picasso.js"></script>
+</body>
+</html>
